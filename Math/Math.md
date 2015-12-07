@@ -2,14 +2,14 @@
 Math - Trigonometric Function Solver
 
 ## Examples:
-For a value of PI/2, the program will display: 
-Value: 1.5707964
-Sine: 1.0
-Cosine: -4.371139E-8
-Tangent: -2.2877332E7
-Arc Sine: NaN
-Arc Cosine: NaN
-Arc Tangent: 1.0038848
+>For a value of PI/2, the program will display: 
+>Value: 1.5707964
+>Sine: 1.0
+>Cosine: -4.371139E-8
+>Tangent: -2.2877332E7
+>Arc Sine: NaN
+>Arc Cosine: NaN
+>Arc Tangent: 1.0038848
 
 
 
@@ -17,34 +17,8 @@ Arc Tangent: 1.0038848
 The function takes a value and displays the six basic trigonometric functions calculated using the value.
 
 ## Syntax:
-```
-  float value = PI/2; //set value of trig function to calculate in radians
-  
-  
-  void setup(){
-    textAlign(CENTER, BOTTOM);
-    size(800,600);
-  
-  }
-  
-  void draw(){
-    //set background to black
-    background(0);
-  
-    //store result of trig function
-    float[] result = trig(value);
-    
-    //Display trig functions
-    text("Value: " + value, width/2, 50);
-    text("Sine: " + result[0], width/2, 100);
-    text("Cosine: " + result[1], width/2, 150);
-    text("Tangent: " + result[2], width/2, 200);
-    text("Arc Sine: " + result[3], width/2, 250);
-    text("Arc Cosine: " + result[4], width/2, 300);
-    text("Arc Tangent: " + result[5], width/2, 350);  
-    
-  }
-  
+```processing
+ 
   float[] trig(float value){
     float[] result = new float[6];
     result[0] = sin(value);
